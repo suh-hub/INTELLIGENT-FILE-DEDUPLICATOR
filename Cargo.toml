@@ -1,0 +1,23 @@
+[package]
+name = "intelligent-file-deduplicator"
+version = "0.1.0"
+edition = "2024"
+documentation = "https://debansu244688.github.io/intelligent-file-deduplicator/"
+
+[dependencies]
+sha2 = "0.10"
+hex = "0.4"
+rayon = "1.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1.10"
+colored = "3.0"
+
+[dev-dependencies]
+tempfile = "3"
+assert_cmd = "2"
+predicates = "3"
+
+[lib]
+name = "intelligent_file_deduplicator"
+path = "src/lib.rs"
